@@ -1,0 +1,11 @@
+Model,Recall@1,Recall@5,Recall@10,Recall@20,MRR,nDCG@10
+Nomic-Embed-Text-v2-MoE,0.878,0.977,0.986,0.992,0.9215,0.9371
+BGE-M3,0.87,0.973,0.984,0.994,0.9183,0.9342
+Multilingual-E5-large-instruct,0.842,0.957,0.979,0.988,0.895,0.9151
+Jina-Embeddings-v3,0.803,0.952,0.968,0.986,0.8727,0.8953
+GTE-multilingual-base,0.72,0.893,0.93,0.957,0.7976,0.8277
+LaBSE,0.618,0.827,0.893,0.929,0.7091,0.7501
+Qwen3-Embedding-0.6B,0.615,0.81,0.861,0.902,0.7043,0.7387
+Paraphrase-multilingual-mpnet-base-v2,0.387,0.616,0.715,0.807,0.4967,0.5412
+Paraphrase-multilingual-MiniLM-L12-v2,0.148,0.255,0.317,0.388,0.2071,0.2242
+Pashto BERT (baseline),0.022,0.067,0.116,0.171,0.0559,0.061

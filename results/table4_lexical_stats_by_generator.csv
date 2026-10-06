@@ -1,0 +1,6 @@
+Generator,Documents,Total Tokens,Vocabulary Size,Type-Token Ratio,Avg. Word Length (chars)
+claude-sonnet-4-5-20250929,200,49790,7670,0.154,3.8
+deepseek-v4-pro,200,33449,5406,0.1616,3.73
+gemini-3-flash,200,30487,5313,0.1743,3.8
+gpt-5.2-high,200,40461,7099,0.1755,3.74
+qwen3.7-max,200,32407,5140,0.1586,3.85

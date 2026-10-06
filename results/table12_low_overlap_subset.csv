@@ -1,0 +1,11 @@
+Model,Normal-Overlap MRR (n=950),Low-Overlap MRR (n=50),Relative Drop
+Jina-Embeddings-v3,0.8794,0.7438,15.4%
+LaBSE,0.7151,0.5946,16.9%
+BGE-M3,0.9271,0.7509,19.0%
+Multilingual-E5-large-instruct,0.9054,0.6978,22.9%
+Nomic-Embed-Text-v2-MoE,0.9329,0.7034,24.6%
+Paraphrase-multilingual-mpnet-base-v2,0.5033,0.3709,26.3%
+Paraphrase-multilingual-MiniLM-L12-v2,0.2102,0.1481,29.5%
+GTE-multilingual-base,0.8103,0.5561,31.4%
+Qwen3-Embedding-0.6B,0.7208,0.3904,45.8%
+Pashto BERT (baseline),0.058,0.0163,71.8%

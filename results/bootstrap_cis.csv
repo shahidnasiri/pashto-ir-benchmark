@@ -1,0 +1,10 @@
+Model A,Model B,Mean MRR diff,95% CI low,95% CI high,Holm-adjusted p
+Nomic-Embed-Text-v2-MoE,BGE-M3,0.0032,-0.0097,0.016,1.0
+BGE-M3,Multilingual-E5-large-instruct,0.0232,0.0097,0.0371,0.0023
+Multilingual-E5-large-instruct,Jina-Embeddings-v3,0.0224,0.0079,0.0373,0.0094
+Jina-Embeddings-v3,GTE-multilingual-base,0.075,0.0552,0.0947,0.0
+GTE-multilingual-base,LaBSE,0.0885,0.0623,0.1151,0.0
+LaBSE,Qwen3-Embedding-0.6B,0.0048,-0.0254,0.0351,1.0
+Qwen3-Embedding-0.6B,Paraphrase-multilingual-mpnet-base-v2,0.2076,0.1776,0.2381,0.0
+Paraphrase-multilingual-mpnet-base-v2,Paraphrase-multilingual-MiniLM-L12-v2,0.2896,0.2606,0.3182,0.0
+Paraphrase-multilingual-MiniLM-L12-v2,Pashto BERT (baseline),0.1511,0.1285,0.1744,0.0

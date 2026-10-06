@@ -1,0 +1,22 @@
+﻿Metric,Value
+Duplicate document groups,115
+Documents affected by exact duplication,329 (32.9%)
+Duplicate-document groups with identical metadata (Class A),9 (7.8%)
+Duplicate query-text groups,226
+Queries affected by exact query duplication,584
+Duplicate query groups targeting same/duplicate documents,109 (48.2%)
+Duplicate query groups targeting clearly different documents,117
+Near-duplicate query pairs (cosine >= 0.90),595
+Near-duplicate pairs targeting clearly different documents,322
+Queries whose target has an exact duplicate elsewhere,329 (32.9%)
+Low-overlap flagged queries (5th percentile TF-IDF),50
+  ...of which labeled 'hard' difficulty,20
+  ...of which NOT labeled 'hard',30
+"Total queries flagged suspicious (Part 6, either criterion)",106
+Queries affected by any audited issue,617 (61.7%)
+Duplicate query groups — HIGH risk,117
+Duplicate query groups — MEDIUM risk,109
+Duplicate query groups — LOW risk,0
+Duplicate document groups — HIGH risk,0
+Duplicate document groups — MEDIUM risk,106
+Duplicate document groups — LOW risk,9

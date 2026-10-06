@@ -1,0 +1,11 @@
+Model,Dim,Doc Encode Time (s),Query Encode Time (s),Throughput (doc/s),Query Latency (ms),Peak VRAM (GB)
+LaBSE,768,13.84,4.91,72.3,4.9,3.84
+Paraphrase-multilingual-mpnet-base-v2,768,8.41,5.4,118.9,5.4,1.2
+Paraphrase-multilingual-MiniLM-L12-v2,384,7.92,4.57,126.3,4.6,0.52
+Multilingual-E5-large-instruct,1024,16.84,7.2,59.4,7.2,4.58
+BGE-M3,1024,17.82,6.65,56.1,6.7,2.89
+Pashto BERT (baseline),768,8.24,2.25,121.4,2.3,0.77
+Jina-Embeddings-v3,1024,31.15,13.58,32.1,13.6,2.23
+GTE-multilingual-base,768,11.71,5.99,85.4,6.0,2.63
+Nomic-Embed-Text-v2-MoE,768,28.66,10.9,34.9,10.9,2.24
+Qwen3-Embedding-0.6B,1024,42.41,10.79,23.6,10.8,9.38

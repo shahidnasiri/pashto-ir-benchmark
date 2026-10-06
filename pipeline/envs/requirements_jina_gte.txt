@@ -1,0 +1,17 @@
+# pashto-jina-gte: jina-embeddings-v3, gte-multilingual-base
+# Both require trust_remote_code=True; versions below are Jina AI's
+# own pinned, confirmed-working combination (HF discussion #101).
+# torch is installed separately in 01_create_envs.bat
+
+transformers==4.48.1
+sentence-transformers==3.3.1
+einops==0.8.0
+huggingface_hub==0.27.1
+numpy==1.26.4
+pandas==2.2.3
+tqdm==4.67.0
+
+# flash-attn is OPTIONAL (speed only) and frequently fails to build on
+# native Windows. Skip it — both models fall back to eager attention
+# automatically. If you later want it, use WSL2 Ubuntu instead.
+# pip install flash-attn --no-build-isolation

@@ -1,0 +1,54 @@
+PASHTO IR BENCHMARK — DUPLICATION & CONSISTENCY AUDIT REPORT
+=================================================================
+
+This report distinguishes five separate dimensions. A finding in one dimension
+does not imply anything about the others:
+  - structural integrity   (IDs, required fields, target validity)
+  - lexical similarity     (character/token overlap; a proxy signal only)
+  - document duplication   (exact/near-duplicate document_text)
+  - query duplication      (exact/near-duplicate query_text)
+  - semantic relevance     (NOT assessed in this notebook — no LLM or human
+                             judgment was used; nothing here is a relevance label)
+
+1. Are duplicate documents mostly exact copies?
+   115 duplicate-text groups found, covering 329 (32.9%) of 1000 documents. Of these groups, 7.8% have identical text AND identical metadata (Class A), and the remainder show some metadata mismatch — see duplicate_document_groups.csv for classification per group.
+
+2. Do duplicate queries usually target duplicate documents?
+   48.2% of duplicate query-text groups target either the same document or documents that are themselves exact/near-duplicates of each other.
+
+3. How many duplicate queries target genuinely different documents?
+   117 duplicate query-text groups (out of 226) target documents classified as moderately similar or clearly different from each other — see duplicate_query_groups.csv, target_relationship='different_documents'.
+
+4. How many target documents have exact duplicates?
+   329 queries (32.9%) have a target document with at least one exact-text duplicate elsewhere in the corpus — see duplicate_target_impact.csv.
+
+5 & 6. Low-overlap queries: problematic vs. plausible hard queries.
+   50 queries were flagged at the 5th-percentile TF-IDF cosine cutoff. As a rough cross-reference, 20 of these carry a 'hard' difficulty label and 30 do not. Difficulty-label agreement is only a weak proxy — each case in low_overlap_queries_with_full_text.csv needs a human read to distinguish a genuinely hard/indirect query from a possible query-target mismatch.
+
+7. What proportion of the benchmark is affected by each issue?
+   Document duplication : 32.9% of documents
+   Query duplication     : 58.4% of queries (exact text)
+   Near-duplicate queries: 60.3% of queries involved in a cosine>=0.90 pair
+   Low lexical overlap    : 5.0% of queries (flagged tail)
+   Any of the above       : 61.7% of queries
+
+8. Which issues require manual review?
+   - 117 duplicate query groups classified HIGH risk (identical query wording pointing at genuinely different documents)
+   - 0 duplicate document groups classified HIGH risk (identical text with conflicting category/metadata, or other unusual patterns)
+   - 50 low-lexical-overlap queries (Part 5/6)
+   All three sets are exported to CSV for line-by-line human review; none were altered.
+
+9. Which issues could bias retrieval metrics?
+   - 329 queries with an exact-duplicate target document risk false
+     negatives under strict single-ID retrieval evaluation (a correct retrieval of the
+     duplicate would be scored as wrong).
+   - 117 duplicate query groups pointing at genuinely different
+     documents risk inconsistent gold-label behavior if the same query text is ever reused
+     in train/eval splits without care.
+
+10. Does the benchmark appear ready to freeze, or does it need another revision cycle?
+    This notebook does not make that decision — it is evidence only. Based on the figures
+    above, the reviewer should weigh: the scale of exact document duplication (32.9% of documents), the 117 duplicate-query
+    groups pointing at different documents, and the manual-review outcome for the flagged
+    low-overlap queries, before deciding whether to freeze, deduplicate, or regenerate
+    the affected subset.

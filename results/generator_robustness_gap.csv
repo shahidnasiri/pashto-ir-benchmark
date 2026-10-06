@@ -1,0 +1,11 @@
+Model,Best Generator MRR,Worst Generator MRR,Robustness Gap
+Nomic-Embed-Text-v2-MoE,0.9455,0.9123,0.0332
+Pashto BERT (baseline),0.0715,0.033,0.0385
+GTE-multilingual-base,0.8215,0.7577,0.0638
+Multilingual-E5-large-instruct,0.9265,0.8595,0.067
+BGE-M3,0.9476,0.8793,0.0683
+Jina-Embeddings-v3,0.9245,0.8247,0.0998
+Paraphrase-multilingual-MiniLM-L12-v2,0.2789,0.1737,0.1052
+Qwen3-Embedding-0.6B,0.7996,0.6517,0.1479
+Paraphrase-multilingual-mpnet-base-v2,0.5732,0.4161,0.1571
+LaBSE,0.7813,0.6212,0.1601

@@ -1,0 +1,18 @@
+# pashto-main: LaBSE, paraphrase-mpnet, paraphrase-MiniLM,
+#              multilingual-e5-large-instruct, BGE-M3, Qwen3-Embedding-0.6B,
+#              Pashto BERT baseline
+# torch is installed separately in 01_create_envs.bat (matches your cu128 build)
+
+transformers==4.46.3
+sentence-transformers==3.3.1
+accelerate==1.1.1
+huggingface_hub==0.26.2
+scikit-learn==1.5.2
+scipy==1.14.1
+numpy==1.26.4
+pandas==2.2.3
+matplotlib==3.9.2
+seaborn==0.13.2
+tqdm==4.67.0
+sentencepiece==0.2.0
+protobuf==5.28.3

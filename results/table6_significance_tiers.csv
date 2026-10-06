@@ -1,0 +1,11 @@
+Tier,Model,Mean MRR
+1,Nomic-Embed-Text-v2-MoE,0.9215
+1,BGE-M3,0.9183
+2,Multilingual-E5-large-instruct,0.895
+3,Jina-Embeddings-v3,0.8727
+4,GTE-multilingual-base,0.7976
+5,LaBSE,0.7091
+5,Qwen3-Embedding-0.6B,0.7043
+6,Paraphrase-multilingual-mpnet-base-v2,0.4967
+7,Paraphrase-multilingual-MiniLM-L12-v2,0.2071
+8,Pashto BERT (baseline),0.0559

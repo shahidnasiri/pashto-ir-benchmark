@@ -1,0 +1,19 @@
+﻿Check,Passed,Status
+Total documents = 1000,True,PASS
+Total queries = 1000,True,PASS
+Malformed JSON lines = 0,True,PASS
+Duplicate document IDs = 0,True,PASS
+Duplicate query IDs = 0,True,PASS
+Document ID sequence complete (D0001-D1000),True,PASS
+Query ID sequence complete (Q0001-Q1000),True,PASS
+No missing required document fields,True,PASS
+No missing required query fields,True,PASS
+No invalid target documents,True,PASS
+Exactly one query per document (both directions),True,PASS
+No duplicate document texts,True,PASS
+No duplicate query texts,True,PASS
+"Every (category, model) cell = 20 documents",True,PASS
+All difficulty values valid (easy/medium/hard),True,PASS
+All query_type values valid,True,PASS
+Every model has exactly 200 documents,True,PASS
+Every model has exactly 200 queries,True,PASS

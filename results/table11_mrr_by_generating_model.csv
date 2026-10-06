@@ -1,0 +1,11 @@
+Model,claude-sonnet-4-5-20250929,deepseek-v4-pro,gemini-3-flash,gpt-5.2-high,qwen3.7-max
+Nomic-Embed-Text-v2-MoE,0.9188,0.9129,0.9123,0.9455,0.9179
+BGE-M3,0.9272,0.8793,0.9145,0.9227,0.9476
+Multilingual-E5-large-instruct,0.8984,0.8595,0.8835,0.9072,0.9265
+Jina-Embeddings-v3,0.8247,0.8528,0.8774,0.8839,0.9245
+GTE-multilingual-base,0.8077,0.7577,0.8121,0.8215,0.7891
+LaBSE,0.6998,0.6741,0.769,0.6212,0.7813
+Qwen3-Embedding-0.6B,0.7152,0.6602,0.6517,0.7996,0.6947
+Paraphrase-multilingual-mpnet-base-v2,0.4161,0.5218,0.4695,0.5029,0.5732
+Paraphrase-multilingual-MiniLM-L12-v2,0.1958,0.1915,0.1954,0.1737,0.2789
+Pashto BERT (baseline),0.0517,0.0715,0.0667,0.033,0.0566

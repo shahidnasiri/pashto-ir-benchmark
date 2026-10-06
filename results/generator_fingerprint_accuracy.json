@@ -1,0 +1,6 @@
+{
+  "document_accuracy": 0.837,
+  "query_accuracy": 0.548,
+  "chance_baseline": 0.2,
+  "n_generators": 5
+}

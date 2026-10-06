@@ -1,0 +1,19 @@
+# pashto-nomic: nomic-embed-text-v2-moe
+# torch is installed separately in 01_create_envs.bat
+
+transformers>=4.44.0
+sentence-transformers==3.3.1
+einops==0.8.0
+numpy==1.26.4
+pandas==2.2.3
+tqdm==4.67.0
+
+# megablocks is OPTIONAL — it fuses the MoE layers for speed on Linux/
+# Triton. On native Windows (and on brand-new sm_120 Blackwell cards
+# like the RTX 5080) it frequently fails to build or has no precompiled
+# kernel yet. DO NOT let this block you: the model's own modeling code
+# falls back to a dense (non-fused) MoE implementation automatically
+# when megablocks is absent. You lose some speed, not correctness.
+#
+# To attempt it anyway (optional, Linux/WSL2 recommended):
+#   pip install git+https://github.com/nomic-ai/megablocks.git

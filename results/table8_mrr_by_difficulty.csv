@@ -1,0 +1,11 @@
+Model,Easy,Medium,Hard
+Nomic-Embed-Text-v2-MoE,0.9322,0.9353,0.8897
+BGE-M3,0.9451,0.9176,0.8894
+Multilingual-E5-large-instruct,0.9231,0.8954,0.8633
+Jina-Embeddings-v3,0.8986,0.8598,0.8622
+GTE-multilingual-base,0.8318,0.7794,0.7856
+LaBSE,0.725,0.7104,0.6894
+Qwen3-Embedding-0.6B,0.7313,0.7107,0.665
+Paraphrase-multilingual-mpnet-base-v2,0.5124,0.4947,0.4821
+Paraphrase-multilingual-MiniLM-L12-v2,0.2396,0.19,0.1952
+Pashto BERT (baseline),0.0658,0.0554,0.0458
